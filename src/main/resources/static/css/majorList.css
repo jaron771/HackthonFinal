@@ -28,7 +28,8 @@
     display: flex;
     justify-content: space-between;
 }
-major-description {
+
+.major-description {
     max-height: 60px;
     min-height: 40px;
     overflow: hidden;
@@ -43,8 +44,8 @@ major-description {
     align-items: center;
 }
 
-.majors {
-    margin-: auto;
+.major-operation{
+    margin-left: auto;
 }
 
 .content-header {
