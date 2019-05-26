@@ -1,0 +1,23 @@
+.poster {
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.poster-left {
+    float: left;
+}
+
+.school-badge {
+    max-height: 300px;
+    margin-right: 150px;
+}
+
+.detail-info {
+    font-size: 18px;
+}
+
+.row {
+    margin-right: 5px;
+    margin-top: 10px;
+    font-size: 18px;
+}

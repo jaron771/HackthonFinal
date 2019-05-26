@@ -1,0 +1,99 @@
+
+.nav-top-container {
+    height: 65px;
+    width: 100%;
+    background-image: linear-gradient(25deg, #3730dc, #5d53db, #7474da, #8694d8);
+    background-repeat: no-repeat;
+}
+
+.brand{
+    height: 25px;
+    width: 25px;
+}
+
+.nav-l{
+    padding-top: 10px;
+    font-family: 楷体;
+    font-size: xx-large;
+}
+
+.nav-r{
+    font-size: x-large;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.nav-m{
+    font-size: x-large;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.nav-top-container a{
+    color: #333;
+    font-size: x-large;
+}
+
+.main{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.selectCity{
+    margin-bottom: 50px;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+}
+
+.grade{
+    height: 40px;
+    width: 85px;
+    margin-bottom: 50px;
+}
+
+.university{
+    margin-bottom: 50px;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+}
+
+.major{
+    margin-bottom: 50px;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+}
+
+.tcopyright {
+    margin:0 auto;
+    padding:8px 0;
+    font-size:12px;
+    line-height:28px;
+    color: #333;
+    text-align:center;
+    overflow:hidden;
+    clear:both;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-image: linear-gradient(25deg, #3730dc, #5d53db, #7474da, #8694d8);
+    background-repeat: no-repeat;
+}
+
+.tcopyright .en{
+    font-family:Arial;
+}
+
+.tcopyright a{
+    color:#333;
+    text-decoration: none;
+}
+
+.tcopyright a:hover{
+    color:#bd0a01;
+    text-decoration: underline;
+}

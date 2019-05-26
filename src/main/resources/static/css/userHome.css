@@ -1,9 +1,6 @@
-.nav-top-container {
-    width: 100%;
-    background-color: aqua;
-}
-
-.nav-pills {
-    float: right;
-    list-style: none;
+#main-container{
+    height: 500px;
+    width: 60%;
+    align-content: center;
+    padding: 70px 0;
 }
