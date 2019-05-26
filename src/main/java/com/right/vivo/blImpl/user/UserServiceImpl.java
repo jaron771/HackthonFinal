@@ -24,7 +24,9 @@ public class UserServiceImpl implements UserService {
     @Override
     public User login(UserForm userForm) {
         User user = userMapper.getAccountByName(userForm.getUsername());
+        System.out.println(user);
         if (null == user || !user.getPassword().equals(userForm.getPassword())) {
+            System.out.println(userForm);
             return null;
         }
         return user;
