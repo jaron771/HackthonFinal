@@ -1,0 +1,9 @@
+.nav-top-container {
+    width: 100%;
+    background-color: aqua;
+}
+
+.nav-pills {
+    float: right;
+    list-style: none;
+}
