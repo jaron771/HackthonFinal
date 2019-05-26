@@ -3,6 +3,8 @@ package com.right.vivo.blImpl.school;
 import com.right.vivo.bl.school.SchoolService;
 import com.right.vivo.blImpl.forum.ForumServiceForBl;
 import com.right.vivo.data.school.SchoolMapper;
+import com.right.vivo.po.AdmissionScore;
+import com.right.vivo.po.Major;
 import com.right.vivo.po.University;
 import com.right.vivo.vo.CollegeVO;
 import com.right.vivo.vo.SearchForm;
@@ -27,6 +29,7 @@ public class SchoolServiceImpl implements SchoolService, ForumServiceForBl {
 
     @Override
     public List<CollegeVO> search(SearchForm form) {
+        schoolMapper.searchSchoolByForm(form);
         return null;
     }
 
@@ -40,5 +43,18 @@ public class SchoolServiceImpl implements SchoolService, ForumServiceForBl {
         return null;
     }
 
+    @Override
+    public Major getMajorInfo(int majorId) {
+        return null;
+    }
 
+    @Override
+    public AdmissionScore getMajorScore(int major, String region) {
+        return null;
+    }
+
+
+    public List<University> searchSchoolByForm(SearchForm form) {
+        return schoolMapper.searchSchoolByForm(form);
+    }
 }
