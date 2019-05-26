@@ -1,6 +1,7 @@
 package com.right.vivo.controller.user;
 
 import com.right.vivo.bl.user.UserService;
+import com.right.vivo.config.InterceptorConfiguration;
 import com.right.vivo.po.User;
 import com.right.vivo.vo.ResponseVO;
 import com.right.vivo.vo.UserForm;
@@ -34,7 +35,7 @@ public class UserController {
             return ResponseVO.buildFailure(ACCOUNT_INFO_ERROR);
         }
         //注册session
-        session.setAttribute("user",userForm);
+        session.setAttribute(InterceptorConfiguration.SESSION_KEY, userForm);
         return ResponseVO.buildSuccess(user);
     }
 
