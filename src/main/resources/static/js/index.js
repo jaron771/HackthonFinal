@@ -7,7 +7,7 @@ $(document).ready(function () {
         }
 
         postRequest(
-            '/login',
+            '/user/login',
             formData,
             function (res) {
                 if (res.success) {
@@ -16,7 +16,7 @@ $(document).ready(function () {
                     if (formData.username == "root") {
                         sessionStorage.setItem('role', 'admin');
                         window.location.href = "/admin/movie/manage"
-                        //ToDo: 这里修改url来区分普通用户和管理员
+                        //ToDo:
                     } else {
                         sessionStorage.setItem('role', 'user');
                         window.location.href = "/user/home"

@@ -23,8 +23,8 @@ public interface UserMapper {
     /**
      * 根据用户名查找账号
      *
-     * @param username
+     * @param name
      * @return
      */
-    public User getAccountByName(@Param("username") String username);
+    public User getAccountByName(@Param("name") String name);
 }

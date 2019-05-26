@@ -1,9 +1,8 @@
 package com.right.vivo.po;
 
-
 import lombok.Data;
 
-import java.util.Calendar;
+import java.sql.Date;
 
 @Data
 public class Post {
@@ -36,6 +35,6 @@ public class Post {
     /**
      * 发布时间
      */
-    private Calendar sendTime;
+    private Date sendTime;
 
 }
