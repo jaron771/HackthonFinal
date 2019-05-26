@@ -3,10 +3,11 @@ package com.right.vivo.blImpl.forum;
 import com.right.vivo.bl.forum.ForumService;
 import com.right.vivo.po.Post;
 import com.right.vivo.vo.PostForm;
-import com.right.vivo.vo.ResponseVO;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class ForumServiceImpl implements ForumService{
 
     @Override

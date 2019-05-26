@@ -6,12 +6,13 @@
     <select id="selectRepliesByPostId" resultMap="Post"></select>
     <insert id="insertPost" parameterType="com.right.vivo.po.Post" useGeneratedKeys="true" keyProperty="id"></insert>
     <delete id="deletePost" parameterType="java.lang.Integer"></delete>
-    <update id="updatePost" parameterType="com.right.vivo.po.Post"></update>
+    <update id="updatePost" parameterType="com.right.vivo.vo.PostVO"></update>
 
-    <resultMap id="Post" type="com.right.vivo.po.Post">
+    <resultMap id="Post" type="com.right.vivo.vo.PostVO">
         <id column="id" property="id"></id>
         <result column="title" property="title"></result>
         <result column="content" property="content"></result>
         <result column="send_time" property="sendTime"></result>
+        <result column="user_id" property="userId"></result>
     </resultMap>
 </mapper>

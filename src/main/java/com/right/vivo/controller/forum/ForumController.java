@@ -1,7 +1,6 @@
 package com.right.vivo.controller.forum;
 
 import com.right.vivo.bl.forum.ForumService;
-import com.right.vivo.blImpl.forum.ForumServiceForBl;
 import com.right.vivo.vo.PostForm;
 import com.right.vivo.vo.ResponseVO;
 import org.springframework.beans.factory.annotation.Autowired;
