@@ -1,5 +1,9 @@
 package com.right.vivo.po;
 
+
+import lombok.Data;
+
+@Data
 public class Post {
 
     private int id;

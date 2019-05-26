@@ -1,5 +1,9 @@
 package com.right.vivo.po;
 
+
+import lombok.Data;
+
+@Data
 public class Major {
 
     private int id;
@@ -28,4 +32,5 @@ public class Major {
      * 联系电话
      */
     private String tel;
+
 }
