@@ -5,6 +5,6 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface AuthenticationMapper {
 
-    void passAuthen();
+    void passAuthen(int userId);
 
 }

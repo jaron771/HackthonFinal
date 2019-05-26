@@ -26,13 +26,25 @@ public class PostController {
 
     @DeleteMapping(value = "/delete/{postId}")
     public ResponseVO deletePost(@PathVariable int postId) {
-        return postService.deletePost(postId);
+        try {
+            postService.deletePost(postId);
+            return ResponseVO.buildSuccess();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseVO.buildFailure("失败");
+        }
     }
 
 
     @PostMapping(value = "/recover/{postId}")
     public ResponseVO recoverPost(@PathVariable int postId) {
-        return postService.recoverPost(postId);
+        try {
+            postService.recoverPost(postId);
+            return ResponseVO.buildSuccess();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseVO.buildFailure("失败");
+        }
     }
 
 

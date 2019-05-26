@@ -3,7 +3,6 @@ package com.right.vivo.blImpl.manage;
 
 import com.right.vivo.bl.manage.AuthenticationService;
 import com.right.vivo.data.manage.AuthenticationMapper;
-import com.right.vivo.vo.ResponseVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,20 +17,15 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     }
 
     @Override
-    public ResponseVO passAuthen() {
-        try {
-            authenticationMapper.passAuthen();
-            return ResponseVO.buildSuccess();
-        } catch (Exception e) {
-            e.printStackTrace();
-            return ResponseVO.buildFailure("失败");
+    public String passAuthen(int userId, boolean isAccepted) {
+        if (isAccepted) {
+            authenticationMapper.passAuthen(userId);
+            return "认证成功";
+        } else {
+            return "认证失败";
         }
     }
 
-    @Override
-    public ResponseVO refuseAuthen() {
-        return ResponseVO.buildFailure("认证不通过");
-    }
 
 
 }
