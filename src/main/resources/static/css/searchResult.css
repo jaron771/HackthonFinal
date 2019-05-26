@@ -1,0 +1,39 @@
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.school-name {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.school-department {
+    font-size: 20px;
+
+}
+
+.to-info-btn {
+    margin-top: -1.6rem;
+    position: relative;
+    top: 40%;
+}
+
+li {
+    height: 30px;
+    list-style-type: none;
+    border: 1px dotted #cccccc;
+    text-align: center;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+.card {
+    background: transparent;
+}
+
+.row{
+    margin-right: 0;
+}
