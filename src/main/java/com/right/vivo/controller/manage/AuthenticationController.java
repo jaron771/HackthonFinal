@@ -27,10 +27,11 @@ public class AuthenticationController {
         this.authenticationService = authenticationService;
     }
 
-    @PostMapping(value = "/pass/{userId}/{isAccepted}")
-    public ResponseVO passAuthen(@PathVariable int userId, @PathVariable boolean isAccepted) {
+    @PostMapping(value = "/pass/{userId}")
+    public ResponseVO passAuthen(@PathVariable int userId) {
         try {
-            return ResponseVO.buildSuccess(authenticationService.passAuthen(userId, isAccepted));
+            authenticationService.passAuthen(userId);
+            return ResponseVO.buildSuccess();
         } catch (Exception e) {
             e.printStackTrace();
             return ResponseVO.buildFailure("失败");

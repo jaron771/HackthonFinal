@@ -20,11 +20,12 @@ public class PostServiceImpl implements PostService {
         this.postMapper = postMapper;
     }
 
+    @Override
     public void deletePost(int postId) {
         postMapper.deletePost(postId);
     }
 
-
+    @Override
     public void recoverPost(int postId) {
         postMapper.recoverPost(postId);
     }
