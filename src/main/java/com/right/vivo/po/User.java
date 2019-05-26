@@ -2,8 +2,11 @@ package com.right.vivo.po;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 @Data
-public class User {
+public class User implements Serializable {
+    private static final long serialVersionUID = -10L;
 
     private Integer id;
     /**
