@@ -36,21 +36,21 @@ function deleteRequest(url, data, onSuccess, onError) {
 }
 
 
-function formatDate(date){
+function formatDate(date) {
     var year = date.getFullYear();
-    var month = date.getMonth()+1+'';
-    var day = date.getDate()+'';
-    month.length===1 && (month = '0'+month)
-    day.length===1 && (day = '0'+day)
-    return year+'-'+month+'-'+day;
+    var month = date.getMonth() + 1 + '';
+    var day = date.getDate() + '';
+    month.length === 1 && (month = '0' + month)
+    day.length === 1 && (day = '0' + day)
+    return year + '-' + month + '-' + day;
 }
 
-function formatTime(date){
-    var hour = date.getHours()+'';
-    var minutes = date.getMinutes()+'';
-    hour.length===1 && (hour = '0'+hour)
-    minutes.length===1 && (minutes = '0'+minutes)
-    return hour+":"+minutes;
+function formatTime(date) {
+    var hour = date.getHours() + '';
+    var minutes = date.getMinutes() + '';
+    hour.length === 1 && (hour = '0' + hour)
+    minutes.length === 1 && (minutes = '0' + minutes)
+    return hour + ":" + minutes;
 }
 
 $(document).ready(function () {
@@ -63,17 +63,17 @@ $(document).ready(function () {
         }
     }, true);
 
-    $('.avatar-lg').attr('title','退出登录');
-    $('#logout').attr('title','退出登录');
+    $('.avatar-lg').attr('title', '退出登录');
+    $('#logout').attr('title', '退出登录');
 
     $('.avatar-lg').click(function () {
-        confirm('确认要退出登录吗？') && postRequest('/logout',null,function (res) {
-            window.location.href='/index';
+        confirm('确认要退出登录吗？') && postRequest('/logout', null, function (res) {
+            window.location.href = '/index';
         });
     });
     $('#logout').click(function () {
-        confirm('确认要退出登录吗？') && postRequest('/logout',null,function (res) {
-             window.location.href='/index';
+        confirm('确认要退出登录吗？') && postRequest('/logout', null, function (res) {
+            window.location.href = '/index';
         });
     });
 });
