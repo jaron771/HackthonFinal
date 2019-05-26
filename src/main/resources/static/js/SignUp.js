@@ -7,7 +7,7 @@ $(document).ready(function () {
         }
 
         postRequest(
-            '/register',
+            '/user/register',
             formData,
             function (res) {
                 if (res.success) {

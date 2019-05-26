@@ -15,11 +15,11 @@ $(document).ready(function () {
                     sessionStorage.setItem('id', res.content.id);
                     if (formData.username == "root") {
                         sessionStorage.setItem('role', 'admin');
-                        window.location.href = "/admin/movie/manage"
+                        window.location.href = "/search.html"
                         //ToDo:
                     } else {
                         sessionStorage.setItem('role', 'user');
-                        window.location.href = "/user/home"
+                        window.location.href = "/search.html"
                     }
                 } else {
                     alert(res.message);
