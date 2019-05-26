@@ -33,4 +33,8 @@ public class Major {
      */
     private String tel;
 
+    /**
+     * logo_url
+     */
+    private String logoUrl;
 }
