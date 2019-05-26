@@ -1,7 +1,10 @@
 package com.right.vivo.po;
 
 import java.util.Map;
+import lombok.Data;
+import java.util.List;
 
+@Data
 public class AdmissionScore {
 
     private Integer id;
