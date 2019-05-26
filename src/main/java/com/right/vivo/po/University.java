@@ -26,7 +26,7 @@ public class University {
     /**
      * 邮编地址
      */
-    private int postCode;
+    private Integer postCode;
 
 
 }

@@ -14,19 +14,14 @@ public class User {
     /**
      * 学校
      */
-    private String university;
+    private Integer universityId;
     /**
-     * 院系
+     * 专业
      */
-    private String department;
-    /**
-     * 真实姓名
-     */
-    private String realName;
+    private Integer majorId;
+
     /**
      * 是否为管理员
      */
-    private boolean isAdministrator;
-
-
+    private boolean isAdmin;
 }

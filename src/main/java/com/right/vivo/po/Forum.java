@@ -2,12 +2,12 @@ package com.right.vivo.po;
 
 public class Forum {
 
-    private int id;
+    private Integer id;
 
     /**
      * 学校id
      */
-    private int universityId;
+    private Integer universityId;
 
     /**
      * 论坛名称
@@ -17,5 +17,5 @@ public class Forum {
     /**
      * 专业id
      */
-    private int majorId;
+    private Integer majorId;
 }

@@ -2,7 +2,7 @@ package com.right.vivo.po;
 
 public class Major {
 
-    private int id;
+    private Integer id;
 
     /**
      * 专业名称

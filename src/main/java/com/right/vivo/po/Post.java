@@ -2,17 +2,17 @@ package com.right.vivo.po;
 
 public class Post {
 
-    private int id;
+    private Integer id;
 
     /**
      * 论坛id
      */
-    private int forumId;
+    private Integer forumId;
 
     /**
      * 帖子主题
      */
-    private String theme;
+    private String title;
 
     /**
      * 帖子内容
@@ -20,7 +20,7 @@ public class Post {
     private String content;
 
     /**
-     * 是否是回帖，0为否，1为是
+     * 父贴id。如果为-1，表示为父贴；否则为回帖，表示父贴id。
      */
-    private int isReply;
+    private Integer prePostId;
 }

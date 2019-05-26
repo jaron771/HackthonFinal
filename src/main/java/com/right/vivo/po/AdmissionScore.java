@@ -4,12 +4,12 @@ import java.util.Map;
 
 public class AdmissionScore {
 
-    private int id;
+    private Integer id;
 
     /**
      * 专业id
      */
-    private int majorId;
+    private Integer majorId;
 
     /**
      * 录取分数<年份,分数线>
