@@ -3,6 +3,8 @@ package com.right.vivo.po;
 
 import lombok.Data;
 
+import java.util.Calendar;
+
 @Data
 public class Post {
 
@@ -27,4 +29,13 @@ public class Post {
      * 父贴id。如果为-1，表示为父贴；否则为回帖，表示父贴id。
      */
     private Integer prePostId;
+    /**
+     * 是否被删除,true表示删除
+     */
+    private Boolean delete;
+    /**
+     * 发布时间
+     */
+    private Calendar sendTime;
+
 }

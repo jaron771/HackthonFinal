@@ -1,4 +1,4 @@
-package com.right.vivo.bl.search;
+package com.right.vivo.bl.school;
 
 /**
  * @author DW
