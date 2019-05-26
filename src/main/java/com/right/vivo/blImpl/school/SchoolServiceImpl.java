@@ -5,7 +5,6 @@ import com.right.vivo.blImpl.forum.ForumServiceForBl;
 import com.right.vivo.data.school.SchoolMapper;
 import com.right.vivo.po.AdmissionScore;
 import com.right.vivo.po.Major;
-import com.right.vivo.po.University;
 import com.right.vivo.vo.CollegeVO;
 import com.right.vivo.vo.SearchForm;
 import org.springframework.beans.factory.annotation.Autowired;

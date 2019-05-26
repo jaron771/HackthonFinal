@@ -3,7 +3,6 @@ package com.right.vivo.bl.school;
 
 import com.right.vivo.po.AdmissionScore;
 import com.right.vivo.po.Major;
-import com.right.vivo.po.University;
 import com.right.vivo.vo.CollegeVO;
 import com.right.vivo.vo.SearchForm;
 

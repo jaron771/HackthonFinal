@@ -1,8 +1,8 @@
 package com.right.vivo.po;
 
-import java.util.Map;
 import lombok.Data;
-import java.util.List;
+
+import java.util.Map;
 
 @Data
 public class AdmissionScore {

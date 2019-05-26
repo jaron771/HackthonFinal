@@ -7,12 +7,14 @@ import com.right.vivo.vo.UserForm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author DW
  */
 @RestController()
+@RequestMapping("/user")
 public class UserController {
     private final static String ACCOUNT_INFO_ERROR = "用户名或密码错误";
     private final UserService userService;

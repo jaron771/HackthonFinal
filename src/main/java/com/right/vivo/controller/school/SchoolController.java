@@ -1,20 +1,17 @@
 package com.right.vivo.controller.school;
 
 import com.right.vivo.bl.school.SchoolService;
-import com.right.vivo.blImpl.school.SchoolServiceImpl;
 import com.right.vivo.vo.ResponseVO;
 import com.right.vivo.vo.SearchForm;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author DW
  * @date 2019/5/26
  */
-@RestController("/search")
+@RestController()
+@RequestMapping("/search")
 public class SchoolController {
     private final SchoolService schoolService;
 
