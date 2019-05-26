@@ -32,7 +32,7 @@ public interface SchoolService {
     /**
      * 获取学校信息
      */
-    University getSchoolInfo(int schoolId);
+    CollegeVO getSchoolInfo(int schoolId);
 
     /**
      * 获取专业信息

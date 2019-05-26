@@ -39,7 +39,8 @@ public class SchoolServiceImpl implements SchoolService, ForumServiceForBl {
     }
 
     @Override
-    public University getSchoolInfo(int schoolId) {
+    public CollegeVO getSchoolInfo(int schoolId) {
+
         return null;
     }
 

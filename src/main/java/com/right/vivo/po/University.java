@@ -31,6 +31,4 @@ public class University {
      * 邮编地址
      */
     private Integer postCode;
-
-
 }
