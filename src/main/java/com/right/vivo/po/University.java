@@ -10,7 +10,7 @@ public class University {
     /**
      * 学校简介
      */
-    private String briefINTRO;
+    private String briefIntro;
     /**
      * logo
      */
