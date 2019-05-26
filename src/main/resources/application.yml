@@ -4,13 +4,17 @@ spring:
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
-  thymeleaf:
-    cache: false
   jackson:
     time-zone: GMT+8
-
+  resources:
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/, classpath:/static/html/
+  thymeleaf:
+    prefix: classpath:/static/html/
+    cache: false
 server:
   servlet:
+    context-path: /
+
+servlet:
     session:
       timeout: 7200
-
