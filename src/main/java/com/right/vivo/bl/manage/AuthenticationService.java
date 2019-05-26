@@ -5,6 +5,6 @@ public interface AuthenticationService {
     /**
      * 身份验证
      */
-    String passAuthen(int userId, boolean isAccepted);
+    void passAuthen(int userId);
 
 }

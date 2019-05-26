@@ -17,13 +17,8 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     }
 
     @Override
-    public String passAuthen(int userId, boolean isAccepted) {
-        if (isAccepted) {
-            authenticationMapper.passAuthen(userId);
-            return "认证成功";
-        } else {
-            return "认证失败";
-        }
+    public void passAuthen(int userId) {
+        authenticationMapper.passAuthen(userId);
     }
 
 
