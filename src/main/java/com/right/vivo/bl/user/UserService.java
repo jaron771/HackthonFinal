@@ -1,7 +1,6 @@
 package com.right.vivo.bl.user;
 
 import com.right.vivo.po.User;
-import com.right.vivo.vo.ResponseVO;
 import com.right.vivo.vo.UserForm;
 
 /**

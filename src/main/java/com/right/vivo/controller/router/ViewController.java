@@ -26,9 +26,9 @@ public class ViewController {
         return "signUp";
     }
 
-    @RequestMapping(value = "/login")
+    @RequestMapping(value = "/search")
     public String getLogin() {
-        return "login";
+        return "search";
     }
 
     @RequestMapping(value = "/search/result")

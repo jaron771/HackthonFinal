@@ -1,7 +1,6 @@
 package com.right.vivo.controller.school;
 
 import com.right.vivo.bl.school.SchoolService;
-import com.right.vivo.blImpl.school.SchoolServiceImpl;
 import com.right.vivo.vo.ResponseVO;
 import com.right.vivo.vo.SearchForm;
 import org.springframework.beans.factory.annotation.Autowired;
