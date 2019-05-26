@@ -25,4 +25,8 @@ public class CollegeVO {
         this.university=university;
         this.majors=majors;
     }
+
+    public List<Major> getMajors() {
+        return majors;
+    }
 }
