@@ -24,7 +24,6 @@ public class PostServiceImpl implements PostService {
         postMapper.deletePost(postId);
     }
 
-
     public void recoverPost(int postId) {
         postMapper.recoverPost(postId);
     }

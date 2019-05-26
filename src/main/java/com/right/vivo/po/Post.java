@@ -11,15 +11,17 @@ public class Post {
     private Integer id;
 
     /**
+     * 用户id
+     */
+    private Integer userId;
+    /**
      * 论坛id
      */
     private Integer forumId;
-
     /**
      * 帖子主题
      */
     private String title;
-
     /**
      * 帖子内容
      */
