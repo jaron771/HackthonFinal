@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.right.vivo.data.school.SchoolMapper">
-
+    <select id="searSchoolByForm" resultMap="University"></select>
+    <select id="selectUniversityById" resultMap="University">
+        select * from university where university.id=#{universityId}
+    </select>
+    <select id="selectMajorsByUniId" resultMap="Major">
+        select * from major where major.university_id=#{universityId}
+    </select>
+    <resultMap id="University" type="com.right.vivo.po.University">
+    </resultMap>
+    <resultMap id="Major" type="com.right.vivo.po.Major">
+        <result property="id" column="id"></result>
+        <result property="logoUrl" column="logo_url"></result>
+        <result property="name" column="name"></result>
+        <result property="brief_intro" column="briefIntro"></result>
+    </resultMap>
 </mapper>

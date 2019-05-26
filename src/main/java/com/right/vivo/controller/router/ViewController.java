@@ -50,4 +50,5 @@ public class ViewController {
     public String getUniversityForum(@RequestParam int universityId) {
         return "universityForum";
     }
+
 }
