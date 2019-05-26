@@ -44,4 +44,6 @@ public class SchoolController {
     public ResponseVO getMajorScore(@PathVariable int major, @PathVariable String region) {
         return ResponseVO.buildSuccess(schoolService.getMajorScore(major,region));
     }
+
+
 }
