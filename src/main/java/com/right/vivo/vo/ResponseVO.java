@@ -29,11 +29,19 @@ public class ResponseVO {
         return response;
     }
 
+    private void setSuccess(boolean b) {
+        this.success=b;
+    }
+
     public static ResponseVO buildSuccess(Object content){
         ResponseVO response=new ResponseVO();
         response.setContent(content);
         response.setSuccess(true);
         return response;
+    }
+
+    private void setContent(Object content) {
+        this.content=content;
     }
 
     public static ResponseVO buildFailure(String message){
@@ -42,6 +50,10 @@ public class ResponseVO {
         response.setMessage(message);
         System.out.println(message);
         return response;
+    }
+
+    private void setMessage(String message) {
+        this.message=message;
     }
 
 }

@@ -1,4 +1,4 @@
-create schema vivo collate utf8mb4_0900_ai_ci;
+create schema vivo collate utf8mb4;
 
 create table admission_score
 (

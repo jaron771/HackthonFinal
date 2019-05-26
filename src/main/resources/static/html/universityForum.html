@@ -13,6 +13,10 @@
     <link rel="stylesheet" type="text/css" href="../css/majorList.css"/>
     <link rel="stylesheet" type="text/css" href="../css/universityForum.css"/>
     <link rel="stylesheet" type="text/css" href="../css/index.css"/>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/universityForum.js"></script>
+    <script src="../js/request.js"></script>
 </head>
 <body>
 <div class="nav-top-container">
@@ -32,25 +36,7 @@
                     <span>南京大学（Nanjing University），简称“南大”，是中华人民共和国教育部直属、中央直管副部级建制的综合性全国重点大学，是历史悠久、声誉卓著的百年名校。位列世界一流大学建设高校、”211工程“、”985工程”，入选“珠峰计划”、“111计划”、“2011计划”、“卓越工程师教育培养计划”、“卓越医生教育培养计划”、“卓越法律人才教育培养计划”，是九校联盟、中国大学校长联谊会、环太平洋大学联盟、21世纪学术联盟和东亚研究型大学协会、新工科教育国际联盟成员。
                     </span>
                 </div>
-
-            <ul class="majors-list">
-                <li class='major-item card'>
-                    <img class='major-logo' src='https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=017b19f7a3cc7cd9ee203c8b58684a5a/d50735fae6cd7b89338538990f2442a7d9330e3a.jpg'/>
-                    <div class='major-info'>
-                        <div class='major-title'>
-                            <span class='primary-text'>软件学院</span>
-                        </div>
-                        <div class='major-description dark-text'>
-                            <span>南京大学软件学院，是国家计委和教育部2002年批准设立的国家示范性软件学院。学院全日制学生的教学区地处学校仙林校区，学生食宿在学校仙林校区。学院在职软件工程硕士（MSE）教学中心设在学校鼓楼校区。现有在校本科生760余人，研究生250余人。
-                                <br>南京大学软件学院是我国高层次、复合型软件实用人才的重要培养基地，学院依托南京大学计算机软件新技术国家重点实验室和计算机软件与理论国家重点学科在科学研究上的优势，依托南京高新区在资金、政策和产业上的优势，积极进行软件工程技术项目研发和软件工程教育，为促进我国软件产业发展培养具有国际竞争能力的高级应用型软件人才。
-                            </span>
-                        </div>
-                        <div style='display: flex'>
-                            <div class='-operation'><a href='#'>进入论坛</a></div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+            <ul class="majors-list" id="majors-list-container"></ul>
         </div>
     </div>
     <div id="tcopyright" class="tcopyright" role="contentinfo">
