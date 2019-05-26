@@ -1,6 +1,6 @@
 package com.right.vivo.po;
 
-import java.util.List;
+import java.util.Map;
 
 public class AdmissionScore {
 
@@ -12,12 +12,8 @@ public class AdmissionScore {
     private int majorId;
 
     /**
-     * 年份
+     * 录取分数<年份,分数线>
      */
-    private List<Integer> years;
+    private Map<Integer, Integer> admissionScores;
 
-    /**
-     * 录取分数
-     */
-    private List<Integer> admissionScores;
 }
