@@ -3,7 +3,5 @@
 <mapper namespace="com.right.vivo.data.school.SchoolMapper">
 
 
-    <select id="searchSchoolByForm" resultType="com.right.vivo.po.University">
 
-    </select>
 </mapper>

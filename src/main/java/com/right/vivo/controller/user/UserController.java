@@ -34,7 +34,14 @@ public class UserController {
 
     @PostMapping("/register")
     public ResponseVO registerAccount(@RequestBody UserForm userForm) {
-        return userService.registerAccount(userForm);
+        try {
+            userService.registerAccount(userForm);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseVO.buildFailure("注册失败");
+        }
+
+        return ResponseVO.buildSuccess();
     }
 
     @PostMapping("/logout")

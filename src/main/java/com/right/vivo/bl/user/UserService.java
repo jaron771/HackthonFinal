@@ -14,5 +14,5 @@ public interface UserService {
 
     User login(UserForm userForm);
 
-    ResponseVO registerAccount(UserForm userForm);
+    void registerAccount(UserForm userForm);
 }

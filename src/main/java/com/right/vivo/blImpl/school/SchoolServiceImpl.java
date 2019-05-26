@@ -53,8 +53,4 @@ public class SchoolServiceImpl implements SchoolService, ForumServiceForBl {
         return null;
     }
 
-
-    public List<University> searchSchoolByForm(SearchForm form) {
-        return schoolMapper.searchSchoolByForm(form);
-    }
 }

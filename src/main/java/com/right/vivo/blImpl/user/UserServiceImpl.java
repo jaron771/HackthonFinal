@@ -19,7 +19,6 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public ResponseVO registerAccount(UserForm userForm) {
-        return null;
+    public void registerAccount(UserForm userForm) {
     }
 }
