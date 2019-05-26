@@ -14,11 +14,11 @@ public interface UserMapper {
     /**
      * 创建一个新的账号
      *
-     * @param username
+     * @param name
      * @param password
      * @return
      */
-    public int createNewAccount(@Param("username") String username, @Param("password") String password);
+    public int createNewAccount(@Param("name") String name, @Param("password") String password);
 
     /**
      * 根据用户名查找账号

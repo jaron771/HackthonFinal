@@ -3,10 +3,11 @@
 <mapper namespace="com.right.vivo.data.user.UserMapper">
     <insert id="createNewAccount" useGeneratedKeys="true" keyProperty="id">
         insert into user(name,password)
-        values(#{username},#{password})
+        values(#{name},#{password})
     </insert>
+
     <select id="getAccountByName" resultMap="User">
-        select * from user where name=#{username}
+        select * from user where name=#{name}
     </select>
 
     <resultMap id="User" type="com.right.vivo.po.User">
