@@ -30,7 +30,6 @@ public class PostController {
             postService.deletePost(postId);
             return ResponseVO.buildSuccess();
         } catch (Exception e) {
-            e.printStackTrace();
             return ResponseVO.buildFailure("失败");
         }
     }
@@ -42,7 +41,6 @@ public class PostController {
             postService.recoverPost(postId);
             return ResponseVO.buildSuccess();
         } catch (Exception e) {
-            e.printStackTrace();
             return ResponseVO.buildFailure("失败");
         }
     }

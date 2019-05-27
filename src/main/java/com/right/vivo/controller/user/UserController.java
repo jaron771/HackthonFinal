@@ -5,6 +5,8 @@ import com.right.vivo.config.InterceptorConfiguration;
 import com.right.vivo.po.User;
 import com.right.vivo.vo.ResponseVO;
 import com.right.vivo.vo.UserForm;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,8 +18,9 @@ import javax.servlet.http.HttpSession;
 @RestController()
 @RequestMapping("/user")
 public class UserController {
-    private final static String ACCOUNT_INFO_ERROR = "用户名或密码错误";
+    private static final String ACCOUNT_INFO_ERROR = "用户名或密码错误";
     private final UserService userService;
+    private static final Logger LOGGER = LoggerFactory.getLogger(UserController.class);
 
     @Autowired
     public UserController(UserService userService) {
@@ -41,7 +44,7 @@ public class UserController {
         try {
             userService.registerAccount(userForm);
         } catch (Exception e) {
-            e.printStackTrace();
+            LOGGER.error(e.getMessage());
             return ResponseVO.buildFailure("注册失败");
         }
 
@@ -53,7 +56,7 @@ public class UserController {
         try {
             return ResponseVO.buildSuccess(userService.getUserById(userId));
         } catch (Exception e) {
-            e.printStackTrace();
+            LOGGER.error(e.getMessage());
             return ResponseVO.buildFailure("失败");
         }
 

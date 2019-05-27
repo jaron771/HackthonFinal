@@ -40,7 +40,6 @@ public class ResponseVO {
         ResponseVO response = new ResponseVO();
         response.setSuccess(false);
         response.setMessage(message);
-        System.out.println(message);
         return response;
     }
 

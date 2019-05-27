@@ -6,6 +6,7 @@ import com.right.vivo.po.User;
 import com.right.vivo.vo.UserForm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * @author DW
@@ -13,7 +14,6 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class UserServiceImpl implements UserService {
-    private final static String ACCOUNT_EXIST = "账号已存在";
     private UserMapper userMapper;
 
     @Autowired
@@ -31,6 +31,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    @Transactional(rollbackFor = Exception.class)
     public void registerAccount(UserForm userForm) {
         userMapper.createNewAccount(userForm.getUsername(), userForm.getPassword());
     }

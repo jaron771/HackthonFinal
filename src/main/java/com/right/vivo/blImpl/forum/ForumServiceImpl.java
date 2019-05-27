@@ -5,6 +5,7 @@ import com.right.vivo.po.Post;
 import com.right.vivo.vo.PostForm;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -17,23 +18,16 @@ public class ForumServiceImpl implements ForumService {
 
     @Override
     public List<Post> getPostsByForumId(int forumId) {
-        return null;
+        return new ArrayList<>();
     }
 
     @Override
     public List<Post> getRepliesByPostId(int postId) {
-        return null;
+        return new ArrayList<>();
     }
 
     @Override
     public void addPost(PostForm postForm) {
     }
 
-    @Override
-    public void deletePost(int postId) {
-    }
-
-    @Override
-    public void updatePost(PostForm postForm) {
-    }
 }

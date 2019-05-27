@@ -1,7 +1,6 @@
 package com.right.vivo.blImpl.school;
 
 import com.right.vivo.bl.school.SchoolService;
-import com.right.vivo.blImpl.forum.ForumServiceForBl;
 import com.right.vivo.data.school.SchoolMapper;
 import com.right.vivo.po.AdmissionScore;
 import com.right.vivo.po.Major;
@@ -20,7 +19,7 @@ import java.util.Map;
  * @date 2019/5/26
  */
 @Service
-public class SchoolServiceImpl implements SchoolService, ForumServiceForBl {
+public class SchoolServiceImpl implements SchoolService {
     private SchoolMapper schoolMapper;
 
     @Autowired
@@ -90,8 +89,7 @@ public class SchoolServiceImpl implements SchoolService, ForumServiceForBl {
     public CollegeVO getSchoolInfo(int schoolId) {
         University university = schoolMapper.selectUniversityById(schoolId);
         List<Major> majors = schoolMapper.selectMajorsByUniId(schoolId);
-        CollegeVO collegeVO = new CollegeVO(university, majors);
-        return collegeVO;
+        return new CollegeVO(university, majors);
     }
 
     @Override

@@ -40,16 +40,4 @@ public class ForumController {
         forumService.addPost(postForm);
         return ResponseVO.buildSuccess();
     }
-
-    @PostMapping("/post/delete")
-    public ResponseVO deletePost(@RequestParam int postId) {
-        forumService.deletePost(postId);
-        return ResponseVO.buildSuccess();
-    }
-
-    @PostMapping("/post/update")
-    public ResponseVO deletePost(@RequestBody PostForm postForm) {
-        forumService.updatePost(postForm);
-        return ResponseVO.buildSuccess();
-    }
 }

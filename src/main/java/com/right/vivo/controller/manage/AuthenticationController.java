@@ -3,6 +3,8 @@ package com.right.vivo.controller.manage;
 
 import com.right.vivo.bl.manage.AuthenticationService;
 import com.right.vivo.vo.ResponseVO;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -19,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/authen")
 public class AuthenticationController {
-
+    private static final Logger LOGGER = LoggerFactory.getLogger(AuthenticationController.class);
     private final AuthenticationService authenticationService;
 
     @Autowired
@@ -33,7 +35,7 @@ public class AuthenticationController {
             authenticationService.passAuthen(userId);
             return ResponseVO.buildSuccess();
         } catch (Exception e) {
-            e.printStackTrace();
+            LOGGER.error(e.getMessage());
             return ResponseVO.buildFailure("失败");
         }
     }

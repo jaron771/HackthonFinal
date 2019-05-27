@@ -15,7 +15,6 @@ public interface ForumService {
      * @return
      */
     int getForumIdByMajorId(int majorId);
-    //TODO 返回值类型？
 
     /**
      * 获取论坛的帖子
@@ -40,20 +39,4 @@ public interface ForumService {
      * @return
      */
     void addPost(PostForm postForm);
-
-    /**
-     * 删帖
-     *
-     * @param postId
-     * @return
-     */
-    void deletePost(int postId);
-
-    /**
-     * 更新帖
-     *
-     * @param postForm
-     * @return
-     */
-    void updatePost(PostForm postForm);
 }
