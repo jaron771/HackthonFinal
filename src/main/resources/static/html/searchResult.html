@@ -17,7 +17,7 @@
     <div class="nav-top-container row">
         <div class="col-md-5 offset-0 nav-l">辅助填报高考志愿系统</div>
         <div class="col-md-2 offset-0 nav-m">
-            <a href="/search" rel="nofollow" target="_self">首页</a>
+            <a href="/search" rel="nofollow" target="_self">首页</a>|
             <a href="/forum/search" rel="nofollow" target="_self">论坛</a>
         </div>
         <div class="col-md-2 offset-3 nav-r"><a href="/user/home" rel="nofollow" style="float: right"
@@ -39,7 +39,10 @@
                     </ul>
                 </div>
                 <div class="col-3 text-center">
-                    <button class="btn-lg btn-info to-info-btn">查看详情</button>
+                    <form th:action="@{/search/getSchoolInfo}" method="get">
+                        <input name="universityId" th:value="${VO.university.id}" type="hidden">
+                        <button class="btn-lg btn-info to-info-btn">查看详情</button>
+                    </form>
                 </div>
             </div>
         </div>
