@@ -36,11 +36,7 @@
     text-overflow: ellipsis;
 }
 
-.author {
-    width: 100px;
-}
-
-.picture {
+.picture{
     width: 35px;
 }
 
