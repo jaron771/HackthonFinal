@@ -65,7 +65,6 @@ public class ViewController {
         return "universityForum";
     }
 
-
     @PostMapping("/search/findSchool")
     public String search(@RequestParam("region") String region, @RequestParam("lowScore") int lowScore, @RequestParam("highScore") int highScore, @RequestParam("university") String university, @RequestParam("major") String major, ModelMap map) {
         SearchForm form = new SearchForm();
@@ -85,5 +84,10 @@ public class ViewController {
         University u = schoolService.getSchoolInfo(universityId).getUniversity();
         map.addAttribute("university", u);
         return "universityInfo";
+
+    @RequestMapping(value = "/add/post")
+    public String getAddPost(@RequestParam int majorId) {
+        return "addPost";
+
     }
 }

@@ -96,7 +96,7 @@ public class SchoolServiceImpl implements SchoolService, ForumServiceForBl {
 
     @Override
     public Major getMajorInfo(int majorId) {
-        return null;
+        return schoolMapper.selectMajorById(majorId);
     }
 
     @Override
