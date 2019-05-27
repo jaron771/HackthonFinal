@@ -41,7 +41,10 @@
                     </ul>
                 </div>
                 <div class="col-3 text-center">
-                    <button class="btn-lg btn-info to-info-btn">查看详情</button>
+                    <form th:action="@{/search/getSchoolInfo}" method="get">
+                        <input name="universityId" th:value="${VO.university.id}" type="hidden">
+                        <button class="btn-lg btn-info to-info-btn">查看详情</button>
+                    </form>
                 </div>
             </div>
         </div>

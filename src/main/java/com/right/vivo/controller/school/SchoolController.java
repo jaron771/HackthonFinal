@@ -26,7 +26,7 @@ public class SchoolController {
         return ResponseVO.buildSuccess(schoolService.getSchool());
     }
 
-    @GetMapping("/getSchoolInfo/{schoolId}")
+    @GetMapping("/get/SchoolInfo/{schoolId}")
     public ResponseVO getSchoolInfo(@PathVariable int schoolId) {
         return ResponseVO.buildSuccess(schoolService.getSchoolInfo(schoolId));
     }

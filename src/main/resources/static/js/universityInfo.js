@@ -1,7 +1,8 @@
 $(document).ready(function () {
-    var universityId = 1;//TODO:要写获取学校id的方法
+    let universityId = $("#universityId").text();
+    console.log(universityId);
     getRequest(
-        "/search/getSchoolInfo/" + universityId,
+        "/search/get/SchoolInfo/" + universityId,
         function (res) {
             $("#brief-introduce").innerHTML = res.content.university.briefIntro;
             for (var i = 0; i < 9; i++) {

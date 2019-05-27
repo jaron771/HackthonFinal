@@ -7,7 +7,7 @@ $(document).ready(function () {
 
 function getMajorList() {
     getRequest(
-        '/search/getSchoolInfo/'+universityId,
+        '/search/get/SchoolInfo/'+universityId,
         function (res) {
             renderMajorList(res.content.majors);
         },

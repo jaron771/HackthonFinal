@@ -1,10 +1,12 @@
 package com.right.vivo.controller.router;
 
 import com.right.vivo.bl.school.SchoolService;
+import com.right.vivo.po.University;
 import com.right.vivo.vo.SearchForm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -73,7 +75,15 @@ public class ViewController {
         form.setMajor(major);
         form.setUniversity(university);
 
-        map.addAttribute("VOS",schoolService.search(form));
+        map.addAttribute("VOS", schoolService.search(form));
         return "searchResult";
+    }
+
+
+    @GetMapping("/search/getSchoolInfo")
+    public String getSchoolInfo(@RequestParam("universityId") int universityId, ModelMap map) {
+        University u = schoolService.getSchoolInfo(universityId).getUniversity();
+        map.addAttribute("university", u);
+        return "universityInfo";
     }
 }

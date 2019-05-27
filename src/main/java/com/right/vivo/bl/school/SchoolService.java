@@ -42,4 +42,6 @@ public interface SchoolService {
      * 获取分数信息，因为和地区有关，所以单独拿出来
      */
     AdmissionScore getMajorScore(int major, String region);
+
+
 }
