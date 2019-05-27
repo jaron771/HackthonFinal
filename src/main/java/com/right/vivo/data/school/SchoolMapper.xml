@@ -31,11 +31,7 @@
         where score between #{lowScore} and #{highScore}
           and region = #{region}
     </select>
-    <select id="selectMajorById" resultMap="Major">
-        select *
-        from major
-        where major.id = #{majorId}
-    </select>
+
 
 
 </mapper>

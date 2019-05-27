@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <!-- DW created at 2019/5/26 -->
 <head>
     <meta charset="UTF-8">
@@ -23,26 +23,21 @@
         <div class="col-md-2 offset-3 nav-r"><a href="/user/home" rel="nofollow" style="float: right"
                                                 target="_self">个人中心</a></div>
     </div>
-
-    <h3 class="text-center" id="head">搜索结果</h3>
+    <h3 id="head" class="text-center">搜索结果</h3>
     <br>
+
     <div class="content-container">
-        <div class="card">
+        <div class="card" th:each="VO:${VOS}">
             <div class="row">
                 <div class="col-md-2 offset-1">
-                    <img alt="school" class="school-badge rounded-circle" src="../images/success.png"/>
+                    <img th:src="${VO.university.url}" alt="school" class="school-badge rounded-circle"/>
                 </div>
                 <div class="col-md-4 offset-1">
-                    <h2 class="text-center school-name">蓝鲸大学</h2>
-                    <ul class="school-department">
-                        <li>院系1</li>
-                        <li>院系1</li>
-                        <li>院系1</li>
-                        <li>院系1</li>
-                        <li>院系1</li>
+                    <h2 class="text-center school-name" th:text="${VO.university.name}"></h2>
+                    <ul class="school-department" th:each="major : ${VO.majors}">
+                        <li th:text="${major.name}"></li>
                     </ul>
                 </div>
-
                 <div class="col-3 text-center">
                     <button class="btn-lg btn-info to-info-btn">查看详情</button>
                 </div>
