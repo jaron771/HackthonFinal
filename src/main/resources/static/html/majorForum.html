@@ -14,6 +14,10 @@
     <link rel="stylesheet" type="text/css" href="../css/majorList.css"/>
     <link rel="stylesheet" type="text/css" href="../css/universityForum.css"/>
     <link rel="stylesheet" type="text/css" href="../css/index.css"/>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/majorForum.js"></script>
+    <script src="../js/request.js"></script>
 </head>
 <body>
 <div class="nav-top-container">
@@ -24,31 +28,11 @@
     </div>
     <div class="col-md-2 col-md-offset-3 nav-r"><a href="/user/home" target="_self" rel="nofollow" style="float: right">个人中心</a></div>
 </div>
-<section id="region-main" class="span8 pull-right">
-    <ul class="majors-list">
-        <li class='major-item card'>
-            <img class='major-logo' src='https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=017b19f7a3cc7cd9ee203c8b58684a5a/d50735fae6cd7b89338538990f2442a7d9330e3a.jpg'/>
-            <div class='major-info'>
-                <div class='major-title'>
-                    <span class='primary-text'>软件学院</span>
-                </div>
-                <div class='major-description dark-text'>
-                            <span>南京大学软件学院，是国家计委和教育部2002年批准设立的国家示范性软件学院。学院全日制学生的教学区地处学校仙林校区，学生食宿在学校仙林校区。学院在职软件工程硕士（MSE）教学中心设在学校鼓楼校区。现有在校本科生760余人，研究生250余人。
-                                <br>南京大学软件学院是我国高层次、复合型软件实用人才的重要培养基地，学院依托南京大学计算机软件新技术国家重点实验室和计算机软件与理论国家重点学科在科学研究上的优势，依托南京高新区在资金、政策和产业上的优势，积极进行软件工程技术项目研发和软件工程教育，为促进我国软件产业发展培养具有国际竞争能力的高级应用型软件人才。
-                            </span>
-                </div>
-            </div>
-        </li>
+    <ul class="majors-list" id="major-info-container">
     </ul>
     <div class="h-button-container">
         <h2>讨论区</h2>
-        <div class="singlebutton-forumaddnew">
-            <form id="newdiscussionform" method="get" action="#">
-                <div>
-                    <button>发布一个新帖子</button>
-                </div>
-            </form>
-        </div>
+        <button id="add-post">发布一个新帖子</button>
     </div>
     <table cellspacing="0" class="table table-striped" width="100%" border="1">
         <thead>
@@ -95,7 +79,6 @@
             </tr>
         </tbody>
     </table><div class="paging"></div>
-</section>
 <div id="tcopyright" class="tcopyright" role="contentinfo">
     <div>
         <a href="#" target="_blank" rel="nofollow">关于我们</a> | <a href="#" target="_blank" rel="nofollow">About Us</a> | <a href="#" target="_blank" rel="nofollow">服务协议</a> | <a href="#" target="_blank" rel="nofollow">隐私政策</a> | <a href="#" target="_blank" rel="nofollow">开放平台</a> | <a href="#" target="_blank" rel="nofollow">广告服务</a> | <a href="#" target="_blank" rel="nofollow">招聘信息</a> | <a href="#" target="_blank" rel="nofollow">客服中心</a> | <a href="#" target="_blank" rel="nofollow">举报中心</a> | <a href="#" target="_blank" rel="nofollow">网站导航</a>

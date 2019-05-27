@@ -1,3 +1,39 @@
+.major-item {
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.major-item .major-logo {
+    height: 159px;
+    width: 159px;
+}
+
+.major-info {
+    flex: 1;
+    padding: 10px 20px 0 20px;
+}
+
+.major-info > div {
+    margin: 5px 0;
+}
+
+#major-info-container{
+    width: 100%;
+}
+
+.major-title {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.major-description {
+    max-height: 60px;
+    min-height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 .author{
     width:100px;
 }

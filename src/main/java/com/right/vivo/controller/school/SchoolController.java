@@ -1,6 +1,7 @@
 package com.right.vivo.controller.school;
 
 import com.right.vivo.bl.school.SchoolService;
+import com.right.vivo.vo.MajorVO;
 import com.right.vivo.vo.ResponseVO;
 import com.right.vivo.vo.SearchForm;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,9 +36,9 @@ public class SchoolController {
         return ResponseVO.buildSuccess(schoolService.getSchoolInfo(schoolId));
     }
 
-    @GetMapping("/getMajorInfo/{major}")
-    public ResponseVO getMajorInfo(@PathVariable int major) {
-        return ResponseVO.buildSuccess(schoolService.getMajorInfo(major));
+    @GetMapping("/getMajorInfo/{majorId}")
+    public ResponseVO getMajorInfo(@PathVariable int majorId) {
+        return ResponseVO.buildSuccess(new MajorVO(schoolService.getMajorInfo(majorId)));
     }
 
     @GetMapping("/getMajorScore/{major}/{region}")

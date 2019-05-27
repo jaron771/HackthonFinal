@@ -8,6 +8,9 @@
     <select id="selectMajorsByUniId" resultMap="Major">
         select * from vivo.major where vivo.major.university_id=#{universityId}
     </select>
+    <select id="selectMajorById" resultMap="Major">
+        select * from major where major.id=#{majorId}
+    </select>
     <resultMap id="University" type="com.right.vivo.po.University">
     </resultMap>
     <resultMap id="Major" type="com.right.vivo.po.Major">

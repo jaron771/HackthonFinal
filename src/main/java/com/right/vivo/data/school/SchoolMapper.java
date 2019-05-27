@@ -21,4 +21,6 @@ public interface SchoolMapper {
     University selectUniversityById(@Param("universityId") int universityId);
 
     List<Major> selectMajorsByUniId(@Param("universityId") int universityId);
+
+    Major selectMajorById(@Param("majorId") int majorId);
 }

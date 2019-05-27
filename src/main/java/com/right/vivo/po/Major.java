@@ -37,4 +37,28 @@ public class Major {
      * logo_url
      */
     private String logoUrl;
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getBriefIntro() {
+        return briefIntro;
+    }
+
+    public String getLogoUrl() {
+        return logoUrl;
+    }
+
+    public String getTel() {
+        return tel;
+    }
+
+    public String getAddress() {
+        return address;
+    }
 }

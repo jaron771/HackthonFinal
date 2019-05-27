@@ -51,4 +51,8 @@ public class ViewController {
         return "universityForum";
     }
 
+    @RequestMapping(value = "/add/post")
+    public String getAddPost(@RequestParam int majorId) {
+        return "addPost";
+    }
 }
