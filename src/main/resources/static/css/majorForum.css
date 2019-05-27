@@ -4,6 +4,7 @@
     margin-top: 20px;
     border-bottom: 1px solid #ccc;
 }
+
 .major-item .major-logo {
     height: 159px;
     width: 159px;
@@ -18,7 +19,7 @@
     margin: 5px 0;
 }
 
-#major-info-container{
+#major-info-container {
     width: 100%;
 }
 
@@ -34,15 +35,19 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.author{
-    width:100px;
+
+.author {
+    width: 100px;
 }
-.picture{
+
+.picture {
     width: 35px;
 }
-.singlebutton-forumaddnew{
+
+.singlebutton-forumaddnew {
     margin-bottom: 25px;
 }
-.h-button-container{
+
+.h-button-container {
     margin-left: 5px;
 }

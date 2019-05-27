@@ -3,10 +3,11 @@ package com.right.vivo.controller.school;
 import com.right.vivo.bl.school.SchoolService;
 import com.right.vivo.vo.MajorVO;
 import com.right.vivo.vo.ResponseVO;
-import com.right.vivo.vo.SearchForm;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author DW
@@ -39,7 +40,7 @@ public class SchoolController {
 
     @GetMapping("/getMajorScore/{major}/{region}")
     public ResponseVO getMajorScore(@PathVariable int major, @PathVariable String region) {
-        return ResponseVO.buildSuccess(schoolService.getMajorScore(major,region));
+        return ResponseVO.buildSuccess(schoolService.getMajorScore(major, region));
     }
 
 

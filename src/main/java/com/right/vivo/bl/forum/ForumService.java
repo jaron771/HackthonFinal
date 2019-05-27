@@ -10,6 +10,7 @@ public interface ForumService {
 
     /**
      * 根据专业id获取论坛id
+     *
      * @param majorId
      * @return
      */
@@ -18,6 +19,7 @@ public interface ForumService {
 
     /**
      * 获取论坛的帖子
+     *
      * @param forumId
      * @return
      */
@@ -25,6 +27,7 @@ public interface ForumService {
 
     /**
      * 获取帖子的回帖
+     *
      * @param postId
      * @return
      */
@@ -32,6 +35,7 @@ public interface ForumService {
 
     /**
      * 发帖
+     *
      * @param postForm
      * @return
      */
@@ -39,6 +43,7 @@ public interface ForumService {
 
     /**
      * 删帖
+     *
      * @param postId
      * @return
      */
@@ -46,6 +51,7 @@ public interface ForumService {
 
     /**
      * 更新帖
+     *
      * @param postForm
      * @return
      */

@@ -14,4 +14,7 @@ public interface UserService {
     User login(UserForm userForm);
 
     void registerAccount(UserForm userForm);
+
+    User getUserById(int userId);
+
 }

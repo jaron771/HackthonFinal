@@ -4,79 +4,82 @@
     <meta charset="UTF-8">
     <title>搜索</title>
     <link href="../css/index.css" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css"/>
 
 </head>
 <body>
+
     <div class="nav-top-container">
-        <div class="col-md-5 offset-0 nav-l"><img alt="logo" class="brand" src="../images/success.png">辅助高考志愿系统</div>
+        <div class="col-md-5 offset-0 nav-l">辅助高考志愿系统</div>
         <div class="col-md-2 offset-0 nav-m">
-            <a href="/search" target="_self" rel="nofollow">首页</a>
-            <a href="/forum/search" target="_self" rel="nofollow">论坛</a>
+            <a href="/search" rel="nofollow" target="_self">首页</a>
+            <a href="/forum/search" rel="nofollow" target="_self">论坛</a>
         </div>
-        <div class="col-md-2 offset-3 nav-r"><a href="/user/home" target="_self" rel="nofollow"
-                                                style="float: right">个人中心</a></div>
-    </div>
 
-    <div class="main">
-        <form action="/search/findSchool" method="post">
-            <div>
-                <label>
-                    <span><b style="color: red">* </b>请选择考试省份</span>
-                    <select class="selectCity" name="region">
-                        <option>北京</option>
-                        <option>江苏</option>
-                        <option>浙江</option>
-                        <option>上海</option>
-                        <option>天津</option>
-                        <option>陕西</option>
-                    </select>
-                </label>
-            </div>
-            <div>
-                <label>
-                    <span><b style="color: red">* </b>请输入高考成绩区间</span>
-                    <input placeholder="下限" type="number" name="lowScore" class="grade">
-                    <input placeholder="上限" type="number" name="highScore" class="grade">
-                </label>
-            </div>
-            <div>
-                <label>
-                    <span>请选择学校</span>
-                    <select class="university" name="university">
-                        <option>南京大学</option>
-                    </select>
-                </label>
-            </div>
-            <div>
-                <label>
-                    <span>请选择专业</span>
-                    <select class="major" name="major">
-                        <option></option>
-                        <option>软件工程</option>
-                    </select>
-                </label>
-            </div>
+        <div class="main">
+            <form action="/search/findSchool" method="post">
+                <div>
+                    <label>
+                        <span><b style="color: red">* </b>请选择考试省份</span>
+                        <select class="selectCity" name="region">
+                            <option>北京</option>
+                            <option>江苏</option>
+                            <option>浙江</option>
+                            <option>上海</option>
+                            <option>天津</option>
+                            <option>陕西</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span><b style="color: red">* </b>请输入高考成绩区间</span>
+                        <input class="grade" name="lowScore" placeholder="下限" type="number">
+                        <input class="grade" name="highScore" placeholder="上限" type="number">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span>请选择学校</span>
+                        <select class="university" name="university">
+                            <option>南京大学</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span>请选择专业</span>
+                        <select class="major" name="major">
+                            <option></option>
+                            <option>软件工程</option>
+                        </select>
+                    </label>
+                </div>
 
 
-            <button id="confirm" class="btn">查询</button>
-        </form>
-    </div>
-
-
-    <div id="tcopyright" class="tcopyright" role="contentinfo">
-        <div>
-            <a href="#" target="_blank" rel="nofollow">关于我们</a> | <a href="#" target="_blank" rel="nofollow">About
-            Us</a> | <a href="#" target="_blank" rel="nofollow">服务协议</a> | <a href="#" target="_blank" rel="nofollow">隐私政策</a>
-            | <a href="#" target="_blank" rel="nofollow">开放平台</a> | <a href="#" target="_blank" rel="nofollow">广告服务</a>
-            | <a href="#" target="_blank" rel="nofollow">招聘信息</a> | <a href="#" target="_blank" rel="nofollow">客服中心</a>
-            | <a href="#" target="_blank" rel="nofollow">举报中心</a> | <a href="#" target="_blank" rel="nofollow">网站导航</a>
+                <button class="btn" id="confirm">查询</button>
+            </form>
         </div>
-        <div class="en">Copyright &copy; #### - 2019 MaBuDui. All Rights Reserved</div>
-        <div>
-            <a href="#" target="_blank" rel="nofollow">MaBuDui公司</a> <a href="#" target="_blank" rel="nofollow">版权所有</a>
+
+
+        <div class="tcopyright" id="tcopyright" role="contentinfo">
+            <div>
+                <a href="#" rel="nofollow" target="_blank">关于我们</a> | <a href="#" rel="nofollow" target="_blank">About
+                Us</a> | <a href="#" rel="nofollow" target="_blank">服务协议</a> | <a href="#" rel="nofollow"
+                                                                                  target="_blank">隐私政策</a>
+                | <a href="#" rel="nofollow" target="_blank">开放平台</a> | <a href="#" rel="nofollow"
+                                                                           target="_blank">广告服务</a>
+                | <a href="#" rel="nofollow" target="_blank">招聘信息</a> | <a href="#" rel="nofollow"
+                                                                           target="_blank">客服中心</a>
+                | <a href="#" rel="nofollow" target="_blank">举报中心</a> | <a href="#" rel="nofollow"
+                                                                           target="_blank">网站导航</a>
+            </div>
+            <div class="en">Copyright &copy; #### - 2019 MaBuDui. All Rights Reserved</div>
+            <div>
+                <a href="#" rel="nofollow" target="_blank">MaBuDui公司</a> <a href="#" rel="nofollow"
+                                                                            target="_blank">版权所有</a>
+            </div>
         </div>
-    </div>
 
 
 </body>

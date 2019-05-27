@@ -7,7 +7,7 @@ $(document).ready(function () {
 
 function getMajorList() {
     getRequest(
-        '/search/get/SchoolInfo/'+universityId,
+        '/search/get/SchoolInfo/' + universityId,
         function (res) {
             renderMajorList(res.content.majors);
         },
@@ -24,14 +24,14 @@ function renderMajorList(list) {
         major.briefIntro = major.briefIntro || '';
         majorDomStr +=
             "<li class='major-item card'>" +
-                "<img class='major-logo' src='" + major.logoUrl + "'/>" +
-                "<div class='major-info'>" +
-                    "<div class='major-title'>" +
-                        "<span class='primary-text'>" + major.name + "</span>" +
-                    "</div>" +
-                    "<div class='major-description dark-text'><a href='/major/forum?majorId="+major.id+"'>进入论坛</a>" +
-                    "</div>" +
-                "</div>"+
+            "<img class='major-logo' src='" + major.logoUrl + "'/>" +
+            "<div class='major-info'>" +
+            "<div class='major-title'>" +
+            "<span class='primary-text'>" + major.name + "</span>" +
+            "</div>" +
+            "<div class='major-description dark-text'><a href='/major/forum?majorId=" + major.id + "'>进入论坛</a>" +
+            "</div>" +
+            "</div>" +
             "</li>";
     });
     $('#majors-list-container').append(majorDomStr);

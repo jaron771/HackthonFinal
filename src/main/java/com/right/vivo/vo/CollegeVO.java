@@ -23,9 +23,9 @@ public class CollegeVO {
      */
     private List<Major> majors;
 
-    public CollegeVO(University university, List<Major> majors){
-        this.university=university;
-        this.majors=majors;
+    public CollegeVO(University university, List<Major> majors) {
+        this.university = university;
+        this.majors = majors;
     }
 
     public List<Major> getMajors() {

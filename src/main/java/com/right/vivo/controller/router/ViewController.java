@@ -84,6 +84,7 @@ public class ViewController {
         University u = schoolService.getSchoolInfo(universityId).getUniversity();
         map.addAttribute("university", u);
         return "universityInfo";
+    }
 
     @RequestMapping(value = "/add/post")
     public String getAddPost(@RequestParam int majorId) {

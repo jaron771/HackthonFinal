@@ -3,71 +3,88 @@
     margin: 0;
     font-size: 14px;
 }
+
 html {
     height: 100%;
 }
+
 body {
     height: 100%;
 }
+
 input {
     width: 250px;
     height: 25px;
     border: 0;
 }
+
 ul {
     list-style: none;
 }
+
 .card {
     background: #fff;
     border-radius: 2px;
     box-shadow: #ccc 1px 0 0 0;
 }
+
 .card1 {
     background: rgba(120, 188, 255, 0.07);
     border-radius: 2px;
     box-shadow: #ccc 1px 0 0 0;
 }
+
 .title {
     font-size: 24px;
 }
+
 .avatar-lg {
     width: 55px;
-    height:55px;
+    height: 55px;
     border-radius: 50%;
 }
+
 .avatar-sm {
     width: 40px;
-    height:40px;
+    height: 40px;
     border-radius: 50%;
 }
+
 .label {
     padding: 5px;
     color: #fff;
-    border-radius: 10px!important;
+    border-radius: 10px !important;
     margin: 0 20px;
 }
+
 /**
     颜色相关
  */
 .gray-text {
     color: #777;
 }
+
 .dark-text {
     color: #666;
 }
+
 .error-text {
     color: #ed5565;
 }
+
 .primary-text {
     color: #1caf9a;
     font-size: large;
 }
+
 .primary-bg {
     background: #1caf9a;
 }
+
 .error-bg {
     background: #ed5565;
 }
+
 /**
     form相关
  */
@@ -80,6 +97,7 @@ ul {
     display: flex;
     height: 100%;
 }
+
 .content-container {
     flex: 1;
     height: 100%;
@@ -87,19 +105,23 @@ ul {
     padding: 20px;
     overflow-y: scroll;
 }
+
 .content-item {
     margin-bottom: 30px;
 }
+
 .content-card {
     padding: 20px;
     margin: 10px;
 }
+
 .nav-left-container {
     width: 250px;
     height: 100%;
     background: #1d2939;
     padding: 30px 20px;
 }
+
 .nav-top-container {
     width: 100%;
     background: #fff;
@@ -109,14 +131,17 @@ ul {
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
 }
+
 .nav-user-container {
     padding: 0px 5px 0px 5px;
     text-align: center;
     color: #fff;
 }
+
 .nav-container .title {
     color: #fff;
 }
+
 .nav-logo {
     color: #1caf9a;
     font: 700 30px "Comic Sans MS";

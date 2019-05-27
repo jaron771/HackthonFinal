@@ -4,94 +4,97 @@
 <head>
     <meta charset="UTF-8">
     <title>学校详情</title>
-    <link rel="stylesheet" type="text/css" href="../css/index.css"/>
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/universityInfo.css"/>
+    <link href="../css/index.css" rel="stylesheet" type="text/css"/>
+    <link crossorigin="anonymous" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/universityInfo.css" rel="stylesheet"/>
 
-<!--    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" crossorigin="anonymous"></script>-->
+    <!--    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" crossorigin="anonymous"></script>-->
     <script src="../js/jquery.js"></script>
-    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script crossorigin="anonymous" src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script crossorigin="anonymous" src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="../js/request.js"></script>
     <script src="../js/universityInfo.js"></script>
 
 
 </head>
 <body>
+
     <div class="nav-top-container row">
-        <div class="col-md-5 offset-0 nav-l"><img alt="logo" class="brand" src="../images/success.png">辅助高考志愿系统</div>
+        <div class="col-md-5 offset-0 nav-l">辅助高考志愿系统</div>
         <div class="col-md-2 offset-0 nav-m">
-            <a href="/search" target="_self" rel="nofollow">首页</a>
-            <a href="/forum/search" target="_self" rel="nofollow">论坛</a>
-        </div>
-        <div class="col-md-2 offset-3 nav-r"><a href="/user/home" rel="nofollow" style="float: right"
-                                                target="_self">个人中心</a></div>
-    </div>
-
-    <div class="content-container">
-        <div class="poster">
-            <div class="poster-left">
-                <img th:src="${university.url}" alt="school" class="school-badge rounded-circle"/>
-            </div>
-            <div class="poster-right">
-                <h1 th:text="${university.name}"></h1>
-                <div class="detail-info" id="brief-introduce" th:text="${university.briefIntro}"></div>
-            </div>
-            <div id="universityId" th:text="${university.id}"></div>
+            <a href="/search" rel="nofollow" target="_self">首页</a>
+            <a href="/forum/search" rel="nofollow" target="_self">论坛</a>
         </div>
 
-        <hr/>
+        <div class="content-container">
+            <div class="poster">
+                <div class="poster-left">
+                    <img alt="school" class="school-badge rounded-circle" th:src="${university.url}"/>
+                </div>
+                <div class="poster-right">
+                    <h1 th:text="${university.name}"></h1>
+                    <div class="detail-info" id="brief-introduce" th:text="${university.briefIntro}"></div>
+                </div>
+                <div id="universityId" th:text="${university.id}"></div>
+            </div>
 
-        <div class="department">
-            <h2 id="title">院系列表</h2>
-            <div class="row">
-                <div class="col-md-3 offset-1">
-                    <button class="btn btn-success" id="major0" role="button">AAAA院</button>
-                </div>
-                <div class="col-md-3 offset-1">
-                    <button class="btn btn-success" id="major1" role="button">AAAA院</button>
-                </div>
-                <div class="col-md-3 offset-1">
-                    <button class="btn btn-success" id="major2" role="button">AAAA院</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 offset-1">
-                    <button class="btn btn-success" id="major3" role="button">AAAA院</button>
-                </div>
-                <div class="col-md-3 offset-1">
-                    <button class="btn btn-success" id="major4" role="button">AAAA院</button>
-                </div>
-                <div class="col-md-3 offset-1">
-                    <button class="btn btn-success" id="major5" role="button">AAAA院</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 offset-1">
-                    <button class="btn btn-success" id="major6" role="button">AAAA院</button>
-                </div>
-                <div class="col-md-3 offset-1">
-                    <button class="btn btn-success" id="major7" role="button">AAAA院</button>
-                </div>
-                <div class="col-md-3 offset-1">
-                    <button class="btn btn-success" id="major8" role="button">AAAA院</button>
-                </div>
-            </div>
-        </div>
-    </div>
+            <hr/>
 
-    <div id="tcopyright" class="tcopyright" role="contentinfo">
-        <div>
-            <a href="#" target="_blank" rel="nofollow">关于我们</a> | <a href="#" target="_blank" rel="nofollow">About
-            Us</a> | <a href="#" target="_blank" rel="nofollow">服务协议</a> | <a href="#" target="_blank" rel="nofollow">隐私政策</a>
-            | <a href="#" target="_blank" rel="nofollow">开放平台</a> | <a href="#" target="_blank" rel="nofollow">广告服务</a>
-            | <a href="#" target="_blank" rel="nofollow">招聘信息</a> | <a href="#" target="_blank" rel="nofollow">客服中心</a>
-            | <a href="#" target="_blank" rel="nofollow">举报中心</a> | <a href="#" target="_blank" rel="nofollow">网站导航</a>
+            <div class="department">
+                <h2 id="title">院系列表</h2>
+                <div class="row">
+                    <div class="col-md-3 offset-1">
+                        <button class="btn btn-success" id="major0" role="button">AAAA院</button>
+                    </div>
+                    <div class="col-md-3 offset-1">
+                        <button class="btn btn-success" id="major1" role="button">AAAA院</button>
+                    </div>
+                    <div class="col-md-3 offset-1">
+                        <button class="btn btn-success" id="major2" role="button">AAAA院</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 offset-1">
+                        <button class="btn btn-success" id="major3" role="button">AAAA院</button>
+                    </div>
+                    <div class="col-md-3 offset-1">
+                        <button class="btn btn-success" id="major4" role="button">AAAA院</button>
+                    </div>
+                    <div class="col-md-3 offset-1">
+                        <button class="btn btn-success" id="major5" role="button">AAAA院</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 offset-1">
+                        <button class="btn btn-success" id="major6" role="button">AAAA院</button>
+                    </div>
+                    <div class="col-md-3 offset-1">
+                        <button class="btn btn-success" id="major7" role="button">AAAA院</button>
+                    </div>
+                    <div class="col-md-3 offset-1">
+                        <button class="btn btn-success" id="major8" role="button">AAAA院</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="en">Copyright &copy; #### - 2019 MaBuDui. All Rights Reserved</div>
-        <div>
-            <a href="#" target="_blank" rel="nofollow">MaBuDui公司</a> <a href="#" target="_blank" rel="nofollow">版权所有</a>
+
+        <div class="tcopyright" id="tcopyright" role="contentinfo">
+            <div>
+                <a href="#" rel="nofollow" target="_blank">关于我们</a> | <a href="#" rel="nofollow" target="_blank">About
+                Us</a> | <a href="#" rel="nofollow" target="_blank">服务协议</a> | <a href="#" rel="nofollow"
+                                                                                  target="_blank">隐私政策</a>
+                | <a href="#" rel="nofollow" target="_blank">开放平台</a> | <a href="#" rel="nofollow"
+                                                                           target="_blank">广告服务</a>
+                | <a href="#" rel="nofollow" target="_blank">招聘信息</a> | <a href="#" rel="nofollow"
+                                                                           target="_blank">客服中心</a>
+                | <a href="#" rel="nofollow" target="_blank">举报中心</a> | <a href="#" rel="nofollow"
+                                                                           target="_blank">网站导航</a>
+            </div>
+            <div class="en">Copyright &copy; #### - 2019 MaBuDui. All Rights Reserved</div>
+            <div>
+                <a href="#" rel="nofollow" target="_blank">MaBuDui公司</a> <a href="#" rel="nofollow"
+                                                                            target="_blank">版权所有</a>
+            </div>
         </div>
-    </div>
 </body>
 </html>

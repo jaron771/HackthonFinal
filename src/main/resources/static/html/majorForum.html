@@ -3,91 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <title>论坛</title>
-    <link rel="stylesheet" type="text/css" href="../css/majorForum.css"/>
+    <link href="../css/majorForum.css" rel="stylesheet" type="text/css"/>
     <!-- Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css"/>
     <!-- font-asesome图标库 -->
-    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css"/>
+    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 
     <!-- 引入css样式文件 -->
-    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/majorList.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/universityForum.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/index.css"/>
+    <link href="../css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/majorList.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/universityForum.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/index.css" rel="stylesheet" type="text/css"/>
     <script src="../js/jquery.js"></script>
     <script src="../js/bootstrap.js"></script>
     <script src="../js/majorForum.js"></script>
     <script src="../js/request.js"></script>
 </head>
 <body>
-<div class="nav-top-container">
-    <div class="col-md-5 offset-0 nav-l"><img alt="logo" class="brand" src="../images/success.png">辅助高考志愿系统</div>
-    <div class="col-md-2 offset-0 nav-m">
-        <a href="/search" target="_self" rel="nofollow">首页</a>
-        <a href="/forum/search" target="_self" rel="nofollow">论坛</a>
+    <div class="nav-top-container">
+        <div class="col-md-5 offset-0 nav-l">辅助高考志愿系统</div>
+        <div class="col-md-2 offset-0 nav-m">
+            <a href="/search" rel="nofollow" target="_self">首页</a>
+            <a href="/forum/search" rel="nofollow" target="_self">论坛</a>
+        </div>
+        <div class="col-md-2 offset-3 nav-r"><a href="/user/home" rel="nofollow" style="float: right"
+                                                target="_self">个人中心</a></div>
     </div>
-    <div class="col-md-2 offset-3 nav-r"><a href="/user/home" rel="nofollow" style="float: right"
-                                            target="_self">个人中心</a></div>
-</div>
     <ul class="majors-list" id="major-info-container">
     </ul>
     <div class="h-button-container">
         <h2>讨论区</h2>
         <button id="add-post">发布一个新帖子</button>
     </div>
-    <table cellspacing="0" class="table table-striped" width="100%" border="1">
+    <table border="1" cellspacing="0" class="table table-striped" width="100%">
         <thead>
-            <tr>
-                <th class="header topic" scope="col">主题</th>
-                <th class="header author" colspan="2" scope="col">发起人</th>
-                <th class="header lastpost" scope="col">最后回帖</th>
-            </tr>
+        <tr>
+            <th class="header topic" scope="col">主题</th>
+            <th class="header author" colspan="2" scope="col">发起人</th>
+            <th class="header lastpost" scope="col">最后回帖</th>
+        </tr>
         </thead>
         <tbody>
-            <tr class="discussion r0">
-                <td class="topic starter"><a href="#">关于HTTP主题大作业的疑问</a></td>
-                <td class="picture"><a href="#"><img src="http://219.219.120.72/theme/image.php/clean/core/1472271068/u/f2" alt="陈泳霖的头像" title="陈泳霖的头像" class="userpicture defaultuserpic" width="35" height="35" /></a></td>
-                <td class="author"><a href="#">陈泳霖</a></td>
-                <td class="lastpost"><a href="#">伍佳艺</a><br /><a href="#">2019年05月24日 星期五 18:06</a></td>
-            </tr>
+        <tr class="discussion r0">
+            <td class="topic starter"><a href="#">关于HTTP主题大作业的疑问</a></td>
+            <td class="picture"><a href="#"><img alt="陈泳霖的头像"
+                                                 class="userpicture defaultuserpic" height="35" src="http://219.219.120.72/theme/image.php/clean/core/1472271068/u/f2"
+                                                 title="陈泳霖的头像" width="35"/></a></td>
+            <td class="author"><a href="#">陈泳霖</a></td>
+            <td class="lastpost"><a href="#">伍佳艺</a><br/><a href="#">2019年05月24日 星期五 18:06</a></td>
+        </tr>
 
-            <tr class="discussion r1">
-                <td class="topic starter"><a href="#">关于HTTP主题大作业的疑问</a></td>
-                <td class="picture"><a href="#"><img src="http://219.219.120.72/theme/image.php/clean/core/1472271068/u/f2" alt="陈泳霖的头像" title="陈泳霖的头像" class="userpicture defaultuserpic" width="35" height="35" /></a></td>
-                <td class="author"><a href="#">陈泳霖</a></td>
-                <td class="lastpost"><a href="#">伍佳艺</a><br /><a href="#">2019年05月24日 星期五 18:06</a></td>
-            </tr>
+        <tr class="discussion r1">
+            <td class="topic starter"><a href="#">关于HTTP主题大作业的疑问</a></td>
+            <td class="picture"><a href="#"><img alt="陈泳霖的头像"
+                                                 class="userpicture defaultuserpic" height="35" src="http://219.219.120.72/theme/image.php/clean/core/1472271068/u/f2"
+                                                 title="陈泳霖的头像" width="35"/></a></td>
+            <td class="author"><a href="#">陈泳霖</a></td>
+            <td class="lastpost"><a href="#">伍佳艺</a><br/><a href="#">2019年05月24日 星期五 18:06</a></td>
+        </tr>
 
-            <tr class="discussion r2">
-                <td class="topic starter"><a href="#">关于HTTP主题大作业的疑问</a></td>
-                <td class="picture"><a href="#"><img src="http://219.219.120.72/theme/image.php/clean/core/1472271068/u/f2" alt="陈泳霖的头像" title="陈泳霖的头像" class="userpicture defaultuserpic" width="35" height="35" /></a></td>
-                <td class="author"><a href="#">陈泳霖</a></td>
-                <td class="lastpost"><a href="#">伍佳艺</a><br /><a href="#">2019年05月24日 星期五 18:06</a></td>
-            </tr>
+        <tr class="discussion r2">
+            <td class="topic starter"><a href="#">关于HTTP主题大作业的疑问</a></td>
+            <td class="picture"><a href="#"><img alt="陈泳霖的头像"
+                                                 class="userpicture defaultuserpic" height="35" src="http://219.219.120.72/theme/image.php/clean/core/1472271068/u/f2"
+                                                 title="陈泳霖的头像" width="35"/></a></td>
+            <td class="author"><a href="#">陈泳霖</a></td>
+            <td class="lastpost"><a href="#">伍佳艺</a><br/><a href="#">2019年05月24日 星期五 18:06</a></td>
+        </tr>
 
-            <tr class="discussion r3">
-                <td class="topic starter"><a href="#">关于HTTP主题大作业的疑问</a></td>
-                <td class="picture"><a href="#"><img src="http://219.219.120.72/theme/image.php/clean/core/1472271068/u/f2" alt="陈泳霖的头像" title="陈泳霖的头像" class="userpicture defaultuserpic" width="35" height="35" /></a></td>
-                <td class="author"><a href="#">陈泳霖</a></td>
-                <td class="lastpost"><a href="#">伍佳艺</a><br /><a href="#">2019年05月24日 星期五 18:06</a></td>
-            </tr>
+        <tr class="discussion r3">
+            <td class="topic starter"><a href="#">关于HTTP主题大作业的疑问</a></td>
+            <td class="picture"><a href="#"><img alt="陈泳霖的头像"
+                                                 class="userpicture defaultuserpic" height="35" src="http://219.219.120.72/theme/image.php/clean/core/1472271068/u/f2"
+                                                 title="陈泳霖的头像" width="35"/></a></td>
+            <td class="author"><a href="#">陈泳霖</a></td>
+            <td class="lastpost"><a href="#">伍佳艺</a><br/><a href="#">2019年05月24日 星期五 18:06</a></td>
+        </tr>
 
-            <tr class="discussion r4">
-                <td class="topic starter"><a href="#">关于HTTP主题大作业的疑问</a></td>
-                <td class="picture"><a href="#"><img src="http://219.219.120.72/theme/image.php/clean/core/1472271068/u/f2" alt="陈泳霖的头像" title="陈泳霖的头像" class="userpicture defaultuserpic" width="35" height="35" /></a></td>
-                <td class="author"><a href="#">陈泳霖</a></td>
-                <td class="lastpost"><a href="#">伍佳艺</a><br /><a href="#">2019年05月24日 星期五 18:06</a></td>
-            </tr>
+        <tr class="discussion r4">
+            <td class="topic starter"><a href="#">关于HTTP主题大作业的疑问</a></td>
+            <td class="picture"><a href="#"><img alt="陈泳霖的头像"
+                                                 class="userpicture defaultuserpic" height="35" src="http://219.219.120.72/theme/image.php/clean/core/1472271068/u/f2"
+                                                 title="陈泳霖的头像" width="35"/></a></td>
+            <td class="author"><a href="#">陈泳霖</a></td>
+            <td class="lastpost"><a href="#">伍佳艺</a><br/><a href="#">2019年05月24日 星期五 18:06</a></td>
+        </tr>
         </tbody>
-    </table><div class="paging"></div>
-<div id="tcopyright" class="tcopyright" role="contentinfo">
-    <div>
-        <a href="#" target="_blank" rel="nofollow">关于我们</a> | <a href="#" target="_blank" rel="nofollow">About Us</a> | <a href="#" target="_blank" rel="nofollow">服务协议</a> | <a href="#" target="_blank" rel="nofollow">隐私政策</a> | <a href="#" target="_blank" rel="nofollow">开放平台</a> | <a href="#" target="_blank" rel="nofollow">广告服务</a> | <a href="#" target="_blank" rel="nofollow">招聘信息</a> | <a href="#" target="_blank" rel="nofollow">客服中心</a> | <a href="#" target="_blank" rel="nofollow">举报中心</a> | <a href="#" target="_blank" rel="nofollow">网站导航</a>
+    </table>
+    <div class="paging"></div>
+    <div class="tcopyright" id="tcopyright" role="contentinfo">
+        <div>
+            <a href="#" rel="nofollow" target="_blank">关于我们</a> | <a href="#" rel="nofollow" target="_blank">About
+            Us</a> | <a href="#" rel="nofollow" target="_blank">服务协议</a> | <a href="#" rel="nofollow" target="_blank">隐私政策</a>
+            | <a href="#" rel="nofollow" target="_blank">开放平台</a> | <a href="#" rel="nofollow" target="_blank">广告服务</a>
+            | <a href="#" rel="nofollow" target="_blank">招聘信息</a> | <a href="#" rel="nofollow" target="_blank">客服中心</a>
+            | <a href="#" rel="nofollow" target="_blank">举报中心</a> | <a href="#" rel="nofollow" target="_blank">网站导航</a>
+        </div>
+        <div class="en">Copyright &copy; #### - 2019 MaBuDui. All Rights Reserved</div>
+        <div>
+            <a href="#" rel="nofollow" target="_blank">MaBuDui公司</a> <a href="#" rel="nofollow" target="_blank">版权所有</a>
+        </div>
     </div>
-    <div class="en">Copyright &copy; #### - 2019 MaBuDui. All Rights Reserved</div>
-    <div>
-        <a href="#" target="_blank" rel="nofollow">MaBuDui公司</a> <a href="#" target="_blank" rel="nofollow">版权所有</a>
-    </div>
-</div>
 </body>
 </html>

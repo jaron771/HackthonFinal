@@ -3,7 +3,6 @@ package com.right.vivo.data.school;
 import com.right.vivo.po.AdmissionScore;
 import com.right.vivo.po.Major;
 import com.right.vivo.po.University;
-import com.right.vivo.vo.SearchForm;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

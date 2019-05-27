@@ -16,8 +16,8 @@ server:
     context-path: /
 
 servlet:
-    session:
-      timeout: 7200
+  session:
+    timeout: 7200
 
 mybatis:
   mapper-locations: classpath:/dataImpl/*/*.xml

@@ -23,37 +23,37 @@ public class ResponseVO {
      */
     private Object content;
 
-    public static ResponseVO buildSuccess(){
-        ResponseVO response=new ResponseVO();
+    public static ResponseVO buildSuccess() {
+        ResponseVO response = new ResponseVO();
         response.setSuccess(true);
         return response;
     }
 
-    private void setSuccess(boolean b) {
-        this.success=b;
-    }
-
-    public static ResponseVO buildSuccess(Object content){
-        ResponseVO response=new ResponseVO();
+    public static ResponseVO buildSuccess(Object content) {
+        ResponseVO response = new ResponseVO();
         response.setContent(content);
         response.setSuccess(true);
         return response;
     }
 
-    private void setContent(Object content) {
-        this.content=content;
-    }
-
-    public static ResponseVO buildFailure(String message){
-        ResponseVO response=new ResponseVO();
+    public static ResponseVO buildFailure(String message) {
+        ResponseVO response = new ResponseVO();
         response.setSuccess(false);
         response.setMessage(message);
         System.out.println(message);
         return response;
     }
 
+    private void setSuccess(boolean b) {
+        this.success = b;
+    }
+
+    private void setContent(Object content) {
+        this.content = content;
+    }
+
     private void setMessage(String message) {
-        this.message=message;
+        this.message = message;
     }
 
 }

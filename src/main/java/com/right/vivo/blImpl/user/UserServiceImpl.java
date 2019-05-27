@@ -34,4 +34,10 @@ public class UserServiceImpl implements UserService {
     public void registerAccount(UserForm userForm) {
         userMapper.createNewAccount(userForm.getUsername(), userForm.getPassword());
     }
+
+    @Override
+    public User getUserById(int userId) {
+        return userMapper.getUserById(userId);
+    }
+
 }

@@ -6,62 +6,62 @@
     background-repeat: no-repeat;
 }
 
-.brand{
+.brand {
     height: 25px;
     width: 25px;
 }
 
-.nav-l{
+.nav-l {
     padding-top: 10px;
     font-family: 楷体;
     font-size: xx-large;
 }
 
-.nav-r{
+.nav-r {
     font-size: x-large;
     padding-top: 15px;
     padding-bottom: 10px;
 }
 
-.nav-m{
+.nav-m {
     font-size: x-large;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 10px;
 }
 
-.nav-top-container a{
+.nav-top-container a {
     color: #333;
     font-size: x-large;
 }
 
-.main{
+.main {
     padding-top: 100px;
     padding-bottom: 100px;
     text-align: center;
 }
 
-.selectCity{
+.selectCity {
     margin-bottom: 50px;
     text-align: center;
     width: 200px;
     height: 40px;
 }
 
-.grade{
+.grade {
     height: 40px;
     width: 85px;
     margin-bottom: 50px;
 }
 
-.university{
+.university {
     margin-bottom: 50px;
     text-align: center;
     width: 200px;
     height: 40px;
 }
 
-.major{
+.major {
     margin-bottom: 50px;
     text-align: center;
     width: 200px;
@@ -69,14 +69,14 @@
 }
 
 .tcopyright {
-    margin:0 auto;
-    padding:8px 0;
-    font-size:12px;
-    line-height:28px;
+    margin: 0 auto;
+    padding: 8px 0;
+    font-size: 12px;
+    line-height: 28px;
     color: #333;
-    text-align:center;
-    overflow:hidden;
-    clear:both;
+    text-align: center;
+    overflow: hidden;
+    clear: both;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -84,16 +84,16 @@
     background-repeat: no-repeat;
 }
 
-.tcopyright .en{
-    font-family:Arial;
+.tcopyright .en {
+    font-family: Arial;
 }
 
-.tcopyright a{
-    color:#333;
+.tcopyright a {
+    color: #333;
     text-decoration: none;
 }
 
-.tcopyright a:hover{
-    color:#bd0a01;
+.tcopyright a:hover {
+    color: #bd0a01;
     text-decoration: underline;
 }

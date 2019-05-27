@@ -6,10 +6,7 @@ import com.right.vivo.po.User;
 import com.right.vivo.vo.ResponseVO;
 import com.right.vivo.vo.UserForm;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
 
@@ -49,6 +46,17 @@ public class UserController {
         }
 
         return ResponseVO.buildSuccess();
+    }
+
+    @GetMapping("/get/{userId}")
+    public ResponseVO getUserInfo(@PathVariable int userId) {
+        try {
+            return ResponseVO.buildSuccess(userService.getUserById(userId));
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseVO.buildFailure("失败");
+        }
+
     }
 
     @PostMapping("/logout")

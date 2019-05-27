@@ -24,4 +24,11 @@ public interface UserMapper {
      * 根据用户名查找账号
      */
     public User getAccountByName(@Param("username") String username);
+
+    /**
+     * 根据用户Id查找账号
+     */
+    public User getUserById(@Param("userId") int userId);
+
+
 }

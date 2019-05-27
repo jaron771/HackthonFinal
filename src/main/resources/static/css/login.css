@@ -1,4 +1,4 @@
-body{
+body {
     background: linear-gradient(to bottom right, #5b56af, #7357aa);
 }
 
@@ -9,6 +9,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 #login-container {
     /*background: rgba(0, 0, 0, 0.6);*/
     border-radius: 3px;
@@ -24,11 +25,11 @@ body{
     margin: 15px 0;
 }
 
-#login-btn, #signUp-btn{
+#login-btn, #signUp-btn {
     background-color: #5b56af;
     border-color: #5b56af;
 }
 
-#register-now, #login-now{
+#register-now, #login-now {
     color: #5b56af;
 }

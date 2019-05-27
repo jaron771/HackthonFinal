@@ -8,32 +8,32 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class ForumServiceImpl implements ForumService{
+public class ForumServiceImpl implements ForumService {
 
     @Override
-    public int getForumIdByMajorId(int majorId){
+    public int getForumIdByMajorId(int majorId) {
         return 0;
     }
 
     @Override
-    public List<Post> getPostsByForumId(int forumId){
+    public List<Post> getPostsByForumId(int forumId) {
         return null;
     }
 
     @Override
-    public List<Post> getRepliesByPostId(int postId){
+    public List<Post> getRepliesByPostId(int postId) {
         return null;
     }
 
     @Override
-    public void addPost(PostForm postForm){
+    public void addPost(PostForm postForm) {
     }
 
     @Override
-    public void deletePost(int postId){
+    public void deletePost(int postId) {
     }
 
     @Override
-    public void updatePost(PostForm postForm){
+    public void updatePost(PostForm postForm) {
     }
 }
