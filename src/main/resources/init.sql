@@ -1,4 +1,4 @@
-create schema vivo collate utf8mb4;
+create schema vivo collate utf8mb4_0900_ai_ci;
 
 create table admission_score
 (
@@ -12,7 +12,7 @@ create table admission_score
 
 create table auth_req
 (
-    id int not null
+    id int auto_increment
         primary key,
     user_id int not null,
     real_name char(11) not null,
@@ -22,7 +22,7 @@ create table auth_req
 
 create table forum
 (
-    id int not null
+    id int auto_increment
         primary key,
     university_id int not null,
     name char(11) not null,
@@ -31,19 +31,19 @@ create table forum
 
 create table major
 (
-    id int not null
+    id int auto_increment
         primary key,
     name char(11) not null,
     university_id int not null,
     briefIntro text null,
     address char(128) null,
     tel char(15) null,
-    url char(128) not null
+    url char(255) not null
 );
 
 create table post
 (
-    id int not null
+    id int auto_increment
         primary key,
     forum_id int not null,
     title char(11) not null,
@@ -51,16 +51,16 @@ create table post
     pre_post_id int null,
     `delete` tinyint(1) default 0 not null,
     user_id int not null,
-    send_time datetime null
+    send_time timestamp null
 );
 
 create table university
 (
-    id int not null
+    id int auto_increment
         primary key,
     name char(11) not null,
     briefIntro text null,
-    url char(128) null,
+    url char(255) null,
     address char(128) null,
     tel char(15) null,
     post_code int null
@@ -68,10 +68,10 @@ create table university
 
 create table user
 (
-    id int not null
+    id int auto_increment
         primary key,
-    name char not null,
-    password char(20) not null,
+    name varchar(50) not null,
+    password varchar(50) not null,
     university_id int null,
     major_id int null,
     is_admin tinyint(1) default 0 not null

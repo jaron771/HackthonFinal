@@ -4,6 +4,7 @@ import com.right.vivo.bl.school.SchoolService;
 import com.right.vivo.vo.ResponseVO;
 import com.right.vivo.vo.SearchForm;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -18,11 +19,6 @@ public class SchoolController {
     @Autowired
     SchoolController(SchoolService schoolService) {
         this.schoolService = schoolService;
-    }
-
-    @GetMapping("/findSchool")
-    public ResponseVO search(@RequestBody SearchForm form) {
-        return ResponseVO.buildSuccess(schoolService.search(form));
     }
 
     @GetMapping("/getSchool")

@@ -3,6 +3,7 @@ package com.right.vivo.vo;
 import com.right.vivo.po.Major;
 import com.right.vivo.po.University;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
@@ -11,6 +12,7 @@ import java.util.List;
  * @date 2019/5/26
  */
 @Data
+@NoArgsConstructor
 public class CollegeVO {
     /**
      * 学校

@@ -1,11 +1,23 @@
 package com.right.vivo.controller.router;
 
+import com.right.vivo.bl.school.SchoolService;
+import com.right.vivo.vo.SearchForm;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class ViewController {
+    private final SchoolService schoolService;
+
+    @Autowired
+    ViewController(SchoolService schoolService) {
+        this.schoolService = schoolService;
+    }
+
     @RequestMapping(value = "/index")
     public String getIndex() {
         return "index";
@@ -51,4 +63,17 @@ public class ViewController {
         return "universityForum";
     }
 
+
+    @PostMapping("/search/findSchool")
+    public String search(@RequestParam("region") String region, @RequestParam("lowScore") int lowScore, @RequestParam("highScore") int highScore, @RequestParam("university") String university, @RequestParam("major") String major, ModelMap map) {
+        SearchForm form = new SearchForm();
+        form.setRegion(region);
+        form.setLowScore(lowScore);
+        form.setHighScore(highScore);
+        form.setMajor(major);
+        form.setUniversity(university);
+
+        map.addAttribute("VOS",schoolService.search(form));
+        return "searchResult";
+    }
 }

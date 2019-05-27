@@ -1,5 +1,6 @@
 package com.right.vivo.data.school;
 
+import com.right.vivo.po.AdmissionScore;
 import com.right.vivo.po.Major;
 import com.right.vivo.po.University;
 import com.right.vivo.vo.SearchForm;
@@ -15,10 +16,12 @@ import java.util.List;
 
 @Mapper
 public interface SchoolMapper {
-
-    List<University> searchSchoolByForm(SearchForm form);
-
     University selectUniversityById(@Param("universityId") int universityId);
 
     List<Major> selectMajorsByUniId(@Param("universityId") int universityId);
+
+    List<AdmissionScore> selectMajorByScore(@Param("lowScore") int lowScore, @Param("highScore") int highScore, @Param("region") String region);
+
+    Major selectMajorById(@Param("majorId") int majorId);
+
 }

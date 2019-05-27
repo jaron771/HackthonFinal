@@ -16,7 +16,7 @@ public class Major {
     /**
      * 学校id
      */
-    private String universityId;
+    private Integer universityId;
 
     /**
      * 专业简介

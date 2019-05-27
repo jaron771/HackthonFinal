@@ -7,8 +7,6 @@ import java.util.Map;
 @Data
 public class AdmissionScore {
 
-    private Integer id;
-
     /**
      * 专业id
      */
@@ -20,8 +18,10 @@ public class AdmissionScore {
     private String region;
 
     /**
-     * 录取分数<年份,分数线>
+     * 分数
      */
-    private Map<Integer, Integer> admissionScores;
+    private Integer score;
+
+    private String majorName;
 
 }
